@@ -1,16 +1,25 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
-import { AppComponent } from './app.component';
+import { NgModule, Injector } from '@angular/core';
+import { NgxCookieConsentModule, NgxCookieConsentComponent } from 'ngx-cookie-consent';
+import { createCustomElement } from '@angular/elements';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgxCookieConsentModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  entryComponents: [NgxCookieConsentComponent],
+  bootstrap: []
 })
-export class AppModule { }
+export class AppModule {
+  constructor(private injector: Injector) { }
+
+  ngDoBootstrap() {
+    const ngElement = createCustomElement(NgxCookieConsentComponent, {
+      injector: this.injector
+    });
+    customElements.define('cookie-consent', ngElement);
+  }
+}

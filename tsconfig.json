@@ -18,6 +18,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-cookie-consent": [
+        "dist/ngx-cookie-consent"
+      ],
+      "ngx-cookie-consent/*": [
+        "dist/ngx-cookie-consent/*"
+      ]
+    }
   }
 }

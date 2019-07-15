@@ -1,0 +1,12 @@
+:host {
+  display: none;
+  align-items: center;
+
+  &.visible {
+    display: flex;
+  }
+  
+  .cookie-consent-content {
+    flex-grow: 1;
+  }
+}
