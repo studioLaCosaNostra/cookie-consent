@@ -34,9 +34,9 @@ change_to_master_branch
 commit_changes
 
 # Attempt to commit to git only if "git commit" succeeded
-if [ $? -eq 0 ]; then
-  echo "Push to GitHub"
-  push_changes
-else
+if [ $? -ne 0 ]; then
   echo "Cannot commit new version"
 fi
+
+echo "Push to GitHub"
+push_changes
