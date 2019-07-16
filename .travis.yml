@@ -4,3 +4,11 @@ script:
   - npm run build-ngx-cookie-consent
   - npm run build-web-component
   - ./.travis-commit-changes.sh
+
+before_deploy:
+  - cd dist/ngx-cookie-consent
+deploy:
+  provider: npm
+  skip_cleanup: true
+  email: $NPM_EMAIL
+  api_key: $NPM_TOKEN
