@@ -6,14 +6,12 @@ script:
   - npm run test-headless
   - npm run build-ngx-cookie-consent
   - npm run build-web-component
+  - ./.travis-commit-changes.sh
 
 before_deploy:
   - cd dist/lacosanostra/ngx-cookie-consent
 deploy:
-  - provider: npm
-    skip_cleanup: true
-    email: $NPM_EMAIL
-    api_key: $NPM_TOKEN
-  - provider: script
-    skip_cleanup: true
-    script: cd ../../../ && ./.travis-commit-changes.sh
+  provider: npm
+  skip_cleanup: true
+  email: $NPM_EMAIL
+  api_key: $NPM_TOKEN
