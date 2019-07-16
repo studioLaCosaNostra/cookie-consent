@@ -41,3 +41,6 @@ fi
 
 echo "Push to GitHub"
 push_changes
+
+echo "exit code"
+echo $?
