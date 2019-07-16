@@ -1,8 +1,6 @@
 #!/bin/sh
 
 set -x
-set -e
-set -o pipefail
 # doc: https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html#The-Set-Builtin
 
 
@@ -28,7 +26,7 @@ commit_changes() {
 
 push_changes() {
   # Add new "origin" with access token in the git URL for authentication
-  git push https://${GH_TOKEN}@github.com/$TRAVIS_REPO_SLUG master
+  return git push https://${GH_TOKEN}@github.com/$TRAVIS_REPO_SLUG master
 }
 
 setup_git
