@@ -1,6 +1,7 @@
 #!/bin/sh
 
 set -x
+set -o pipefail
 # doc: https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html#The-Set-Builtin
 
 
