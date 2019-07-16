@@ -6,8 +6,9 @@
     "start": "ng serve",
     "build-web-component": "./build.sh",
     "build-ngx-cookie-consent": "ng build @lacosanostra/ngx-cookie-consent",
-    "test": "ng test ngx-cookie-consent",
-    "lint": "ng lint ngx-cookie-consent",
+    "test": "ng test",
+    "test-headless": "ng test --watch=false --browsers=ChromeHeadless",
+    "lint": "ng lint",
     "e2e": "ng e2e"
   },
   "private": true,

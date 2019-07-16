@@ -1,6 +1,8 @@
 language: node_js
 
 script:
+  - npm run lint
+  - npm run test-headless
   - npm run build-ngx-cookie-consent
   - npm run build-web-component
   - ./.travis-commit-changes.sh
