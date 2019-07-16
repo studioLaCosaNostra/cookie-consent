@@ -1,5 +1,5 @@
 {
-  "name": "ngx-cookie-consent",
+  "name": "@lacosanostra/ngx-cookie-consent",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^8.0.3",
@@ -8,17 +8,17 @@
     "@angular/cdk": "^8.0.2",
     "@angular/material": "^8.0.2"
   },
+  "main": "bundles/lacosanostra-ngx-cookie-consent.umd.js",
+  "module": "fesm5/lacosanostra-ngx-cookie-consent.js",
+  "es2015": "fesm2015/lacosanostra-ngx-cookie-consent.js",
+  "esm5": "esm5/lacosanostra-ngx-cookie-consent.js",
+  "esm2015": "esm2015/lacosanostra-ngx-cookie-consent.js",
+  "fesm5": "fesm5/lacosanostra-ngx-cookie-consent.js",
+  "fesm2015": "fesm2015/lacosanostra-ngx-cookie-consent.js",
+  "typings": "lacosanostra-ngx-cookie-consent.d.ts",
+  "metadata": "lacosanostra-ngx-cookie-consent.metadata.json",
+  "sideEffects": false,
   "dependencies": {
     "tslib": "^1.9.0"
-  },
-  "main": "bundles/ngx-cookie-consent.umd.js",
-  "module": "fesm5/ngx-cookie-consent.js",
-  "es2015": "fesm2015/ngx-cookie-consent.js",
-  "esm5": "esm5/ngx-cookie-consent.js",
-  "esm2015": "esm2015/ngx-cookie-consent.js",
-  "fesm5": "fesm5/ngx-cookie-consent.js",
-  "fesm2015": "fesm2015/ngx-cookie-consent.js",
-  "typings": "ngx-cookie-consent.d.ts",
-  "metadata": "ngx-cookie-consent.metadata.json",
-  "sideEffects": false
+  }
 }
