@@ -3,6 +3,4 @@ language: node_js
 script:
   - npm run build-ngx-cookie-consent
   - npm run build-web-component
-
-after_script:
   - ./.travis-commit-changes.sh

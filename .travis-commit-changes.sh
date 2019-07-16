@@ -4,12 +4,12 @@ set -x
 # doc: https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html#The-Set-Builtin
 
 
-setup_git() {
+function setup_git() {
   git config --global user.email "travis@travis-ci.org"
   git config --global user.name "Travis CI"
 }
 
-change_to_master_branch() {
+function change_to_master_branch() {
   git stash
   git checkout master
   git pull
