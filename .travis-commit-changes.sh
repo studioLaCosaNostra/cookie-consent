@@ -40,11 +40,8 @@ commit_changes
 # Attempt to commit to git only if "git commit" succeeded
 if [ $? -ne 0 ]; then
   echo "Cannot commit new version"
-  exit 0
+  exit $?
 fi
 
 echo "Push to GitHub"
 push_changes
-
-echo "exit code"
-echo $?
