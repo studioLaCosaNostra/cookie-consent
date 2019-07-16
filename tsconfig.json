@@ -21,10 +21,10 @@
     ],
     "paths": {
       "@lacosanostra/ngx-cookie-consent": [
-        "dist/ngx-cookie-consent"
+        "dist/lacosanostra/ngx-cookie-consent"
       ],
       "@lacosanostra/ngx-cookie-consent/*": [
-        "dist/ngx-cookie-consent/*"
+        "dist/lacosanostra/ngx-cookie-consent/*"
       ]
     }
   }

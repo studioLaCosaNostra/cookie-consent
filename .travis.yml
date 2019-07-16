@@ -6,7 +6,7 @@ script:
   - ./.travis-commit-changes.sh
 
 before_deploy:
-  - cd dist/ngx-cookie-consent
+  - cd dist/lacosanostra/ngx-cookie-consent
 deploy:
   provider: npm
   skip_cleanup: true

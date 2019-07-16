@@ -158,6 +158,41 @@
           }
         }
       }
+    },
+    "@lacosanostra/ngx-cookie-consent": {
+      "projectType": "library",
+      "root": "projects/lacosanostra/ngx-cookie-consent",
+      "sourceRoot": "projects/lacosanostra/ngx-cookie-consent/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/lacosanostra/ngx-cookie-consent/tsconfig.lib.json",
+            "project": "projects/lacosanostra/ngx-cookie-consent/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/lacosanostra/ngx-cookie-consent/src/test.ts",
+            "tsConfig": "projects/lacosanostra/ngx-cookie-consent/tsconfig.spec.json",
+            "karmaConfig": "projects/lacosanostra/ngx-cookie-consent/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/lacosanostra/ngx-cookie-consent/tsconfig.lib.json",
+              "projects/lacosanostra/ngx-cookie-consent/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "cookie-consent"
