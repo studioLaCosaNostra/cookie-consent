@@ -1,0 +1,24 @@
+{
+  "name": "ngx-cookie-consent",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^8.0.3",
+    "@angular/core": "^8.0.3",
+    "@angular/animations": "^8.1.1",
+    "@angular/cdk": "^8.0.2",
+    "@angular/material": "^8.0.2"
+  },
+  "dependencies": {
+    "tslib": "^1.9.0"
+  },
+  "main": "bundles/ngx-cookie-consent.umd.js",
+  "module": "fesm5/ngx-cookie-consent.js",
+  "es2015": "fesm2015/ngx-cookie-consent.js",
+  "esm5": "esm5/ngx-cookie-consent.js",
+  "esm2015": "esm2015/ngx-cookie-consent.js",
+  "fesm5": "fesm5/ngx-cookie-consent.js",
+  "fesm2015": "fesm2015/ngx-cookie-consent.js",
+  "typings": "ngx-cookie-consent.d.ts",
+  "metadata": "ngx-cookie-consent.metadata.json",
+  "sideEffects": false
+}
