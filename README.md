@@ -1,5 +1,9 @@
 # CookieConsent
 
+jsDelivr
+
+`https://cdn.jsdelivr.net/gh/studioLaCosaNostra/cookie-consent/dist/cookie-consent/cookie-consent.js`
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
 
 ## Development server
