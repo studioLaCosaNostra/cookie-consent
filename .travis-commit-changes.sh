@@ -1,6 +1,9 @@
 #!/bin/sh
 
 set -x
+set -e
+set -o pipefail
+
 
 setup_git() {
   git config --global user.email "travis@travis-ci.org"
@@ -19,7 +22,7 @@ commit_changes() {
   # Create a new commit with a custom message
   # with "[skip ci]" to avoid a build loop
   # and Travis build number for reference
-  git commit -m "Travis update dist ($TRAVIS_BUILD_NUMBER)" -m "[skip ci]"
+  git commit -m "Travis update ($TRAVIS_BUILD_NUMBER)" -m "[skip ci]"
 }
 
 push_changes() {
