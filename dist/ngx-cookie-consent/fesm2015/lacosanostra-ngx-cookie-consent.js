@@ -67,4 +67,4 @@ NgxCookieConsentModule.decorators = [
 ];
 
 export { NgxCookieConsentComponent, NgxCookieConsentModule };
-//# sourceMappingURL=ngx-cookie-consent.js.map
+//# sourceMappingURL=lacosanostra-ngx-cookie-consent.js.map

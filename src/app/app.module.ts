@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Injector } from '@angular/core';
-import { NgxCookieConsentModule, NgxCookieConsentComponent } from 'ngx-cookie-consent';
+import { NgxCookieConsentModule, NgxCookieConsentComponent } from '@lacosanostra/ngx-cookie-consent';
 import { createCustomElement } from '@angular/elements';
 
 @NgModule({

@@ -20,10 +20,10 @@
       "dom"
     ],
     "paths": {
-      "ngx-cookie-consent": [
+      "@lacosanostra/ngx-cookie-consent": [
         "dist/ngx-cookie-consent"
       ],
-      "ngx-cookie-consent/*": [
+      "@lacosanostra/ngx-cookie-consent/*": [
         "dist/ngx-cookie-consent/*"
       ]
     }

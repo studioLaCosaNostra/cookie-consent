@@ -1,7 +1,7 @@
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/platform-browser/animations'), require('@angular/material/icon'), require('@angular/material/button')) :
-    typeof define === 'function' && define.amd ? define('ngx-cookie-consent', ['exports', '@angular/core', '@angular/platform-browser/animations', '@angular/material/icon', '@angular/material/button'], factory) :
-    (global = global || self, factory(global['ngx-cookie-consent'] = {}, global.ng.core, global.ng.platformBrowser.animations, global.ng.material.icon, global.ng.material.button));
+    typeof define === 'function' && define.amd ? define('@lacosanostra/ngx-cookie-consent', ['exports', '@angular/core', '@angular/platform-browser/animations', '@angular/material/icon', '@angular/material/button'], factory) :
+    (global = global || self, factory((global.lacosanostra = global.lacosanostra || {}, global.lacosanostra['ngx-cookie-consent'] = {}), global.ng.core, global.ng.platformBrowser.animations, global.ng.material.icon, global.ng.material.button));
 }(this, function (exports, core, animations, icon, button) { 'use strict';
 
     /**
@@ -76,4 +76,4 @@
     Object.defineProperty(exports, '__esModule', { value: true });
 
 }));
-//# sourceMappingURL=ngx-cookie-consent.umd.js.map
+//# sourceMappingURL=lacosanostra-ngx-cookie-consent.umd.js.map
