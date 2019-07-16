@@ -1,7 +1,6 @@
 #!/bin/sh
 
 set -x
-set -o pipefail
 # doc: https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html#The-Set-Builtin
 
 
@@ -17,17 +16,19 @@ change_to_master_branch() {
   git stash pop
 }
 
-commit_changes() {
+function commit_changes() {
   git add -A
   # Create a new commit with a custom message
   # with "[skip ci]" to avoid a build loop
   # and Travis build number for reference
   git commit -m "Travis update ($TRAVIS_BUILD_NUMBER)" -m "[skip ci]"
+  return $?
 }
 
-push_changes() {
+function push_changes() {
   # Add new "origin" with access token in the git URL for authentication
-  return git push https://${GH_TOKEN}@github.com/$TRAVIS_REPO_SLUG master
+  git push https://${GH_TOKEN}@github.com/$TRAVIS_REPO_SLUG master
+  return $?
 }
 
 setup_git
