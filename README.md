@@ -2,7 +2,7 @@
 
 jsDelivr
 
-`https://cdn.jsdelivr.net/gh/studioLaCosaNostra/cookie-consent/dist/cookie-consent/cookie-consent.js`
+`https://cdn.jsdelivr.net/gh/studioLaCosaNostra/cookie-consent@latest/dist/cookie-consent/cookie-consent.js`
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
 
@@ -35,5 +35,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ```
 
 ```html
+https://cdn.jsdelivr.net/npm/@angular/material@8.1.0/prebuilt-themes/indigo-pink.css
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 ```
