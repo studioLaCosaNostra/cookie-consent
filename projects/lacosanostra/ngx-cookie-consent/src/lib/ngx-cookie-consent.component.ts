@@ -16,14 +16,14 @@ export class NgxCookieConsentComponent implements OnInit {
   @HostBinding('class.visible') visible = false;
   private signature = 'cookie-consent-closed';
 
-  public ngOnInit() {
+  public ngOnInit(): void {
     const isClosed = localStorage.getItem(this.signature) === 'true';
     if (!isClosed) {
       this.visible = true;
     }
   }
 
-  public close() {
+  public close(): void {
     localStorage.setItem(this.signature, 'true');
     this.visible = false;
   }
