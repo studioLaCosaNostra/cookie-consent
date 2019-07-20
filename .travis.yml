@@ -16,7 +16,7 @@ deploy:
     on:
       branch: master
   - provider: script
-    script: ./.travis-commit-changes.sh
+    script: ../../../.travis-commit-changes.sh
     skip_cleanup: true
     on:
       branch: master
