@@ -13,6 +13,17 @@ import { NgxCookieConsentModule } from '@lacosanostra/ngx-cookie-consent';
 </lib-ngx-cookie-consent>
 ```
 
+Add material icons to `index.html`. For the closing button to display correctly.
+
+```html
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+```
+
+Places where the library was used.
+
+- [Studio La cosa nostra dev blog](https://studiolacosanostra.github.io)
+- [QR Code Generator](https://studiolacosanostra.github.io/apps/qr-code-generator/)
+
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
 
 ## Code scaffolding
