@@ -24,6 +24,8 @@ Places where the library was used.
 - [Studio La cosa nostra dev blog](https://studiolacosanostra.github.io)
 - [QR Code Generator](https://studiolacosanostra.github.io/apps/qr-code-generator/)
 
+test123
+
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
 
 ## Code scaffolding
