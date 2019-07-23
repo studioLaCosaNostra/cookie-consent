@@ -1,9 +1,15 @@
 {
   "name": "@lacosanostra/ngx-cookie-consent",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "publishConfig": {
     "access": "public"
   },
+  "keywords": [
+    "web-component",
+    "angular",
+    "web-components",
+    "cookie-consent"
+  ],
   "peerDependencies": {
     "@angular/common": "^8.0.3",
     "@angular/core": "^8.0.3",
