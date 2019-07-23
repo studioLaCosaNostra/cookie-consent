@@ -4,6 +4,8 @@ jsDelivr
 
 `https://cdn.jsdelivr.net/gh/studioLaCosaNostra/cookie-consent@latest/dist/cookie-consent/cookie-consent.js`
 
+Article about this components: [Build a reusable Angular library and web component](https://studiolacosanostra.github.io/2019/07/19/Build-a-reusable-Angular-library-and-web-component/)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
 
 ## Development server
