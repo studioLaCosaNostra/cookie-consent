@@ -41,12 +41,21 @@ NgxCookieConsentComponent.decorators = [
       <mat-icon>close</mat-icon>
     </button>
   `,
-                styles: [":host{display:none;align-items:center}:host.visible{display:flex}:host .cookie-consent-content{flex-grow:1}"]
+                styles: [":host{display:none;-webkit-box-align:center;align-items:center}:host.visible{display:-webkit-box;display:flex}:host .cookie-consent-content{-webkit-box-flex:1;flex-grow:1}"]
             }] }
 ];
 NgxCookieConsentComponent.propDecorators = {
     visible: [{ type: HostBinding, args: ['class.visible',] }]
 };
+if (false) {
+    /** @type {?} */
+    NgxCookieConsentComponent.prototype.visible;
+    /**
+     * @type {?}
+     * @private
+     */
+    NgxCookieConsentComponent.prototype.signature;
+}
 
 /**
  * @fileoverview added by tsickle
@@ -65,6 +74,16 @@ NgxCookieConsentModule.decorators = [
                 exports: [NgxCookieConsentComponent]
             },] }
 ];
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 
 export { NgxCookieConsentComponent, NgxCookieConsentModule };
 //# sourceMappingURL=lacosanostra-ngx-cookie-consent.js.map

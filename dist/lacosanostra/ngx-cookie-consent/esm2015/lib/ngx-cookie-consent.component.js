@@ -37,7 +37,7 @@ NgxCookieConsentComponent.decorators = [
       <mat-icon>close</mat-icon>
     </button>
   `,
-                styles: [":host{display:none;align-items:center}:host.visible{display:flex}:host .cookie-consent-content{flex-grow:1}"]
+                styles: [":host{display:none;-webkit-box-align:center;align-items:center}:host.visible{display:-webkit-box;display:flex}:host .cookie-consent-content{-webkit-box-flex:1;flex-grow:1}"]
             }] }
 ];
 NgxCookieConsentComponent.propDecorators = {

@@ -39,7 +39,7 @@ var NgxCookieConsentComponent = /** @class */ (function () {
         { type: Component, args: [{
                     selector: 'lib-ngx-cookie-consent',
                     template: "\n    <div class=\"mat-typography cookie-consent-content\">\n      <ng-content></ng-content>\n    </div>\n    <button mat-icon-button aria-label=\"Close cookie consent\" (click)=\"close()\">\n      <mat-icon>close</mat-icon>\n    </button>\n  ",
-                    styles: [":host{display:none;align-items:center}:host.visible{display:flex}:host .cookie-consent-content{flex-grow:1}"]
+                    styles: [":host{display:none;-webkit-box-align:center;align-items:center}:host.visible{display:-webkit-box;display:flex}:host .cookie-consent-content{-webkit-box-flex:1;flex-grow:1}"]
                 }] }
     ];
     NgxCookieConsentComponent.propDecorators = {
@@ -47,6 +47,15 @@ var NgxCookieConsentComponent = /** @class */ (function () {
     };
     return NgxCookieConsentComponent;
 }());
+if (false) {
+    /** @type {?} */
+    NgxCookieConsentComponent.prototype.visible;
+    /**
+     * @type {?}
+     * @private
+     */
+    NgxCookieConsentComponent.prototype.signature;
+}
 
 /**
  * @fileoverview added by tsickle
@@ -68,6 +77,16 @@ var NgxCookieConsentModule = /** @class */ (function () {
     ];
     return NgxCookieConsentModule;
 }());
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 
 export { NgxCookieConsentComponent, NgxCookieConsentModule };
 //# sourceMappingURL=lacosanostra-ngx-cookie-consent.js.map
