@@ -27,6 +27,9 @@ module.exports = function (config) {
     autoWatch: true,
     browsers: ['Chrome'],
     singleRun: false,
-    restartOnFileChange: true
+    restartOnFileChange: true,
+    files: [
+      "https://cdn.jsdelivr.net/npm/zone.js/dist/zone.min.js"
+    ]
   });
 };
