@@ -26,22 +26,17 @@ Places where the library was used.
 
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
 
-## Code scaffolding
-
-Run `ng generate component component-name --project ngx-cookie-consent` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-cookie-consent`.
-> Note: Don't forget to add `--project ngx-cookie-consent` or else it will be added to the default project in your `angular.json` file.
-
 ## Build
 
-Run `ng build ngx-cookie-consent` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `ng build @lacosanostra/ngx-cookie-consent` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## Publishing
 
-After building your library with `ng build ngx-cookie-consent`, go to the dist folder `cd dist/ngx-cookie-consent` and run `npm publish`.
+After building your library with `ng build @lacosanostra/ngx-cookie-consent`, go to the dist folder `cd dist/ngx-cookie-consent` and run `npm publish`.
 
 ## Running unit tests
 
-Run `ng test ngx-cookie-consent` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `ng test @lacosanostra/ngx-cookie-consent` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## Further help
 
