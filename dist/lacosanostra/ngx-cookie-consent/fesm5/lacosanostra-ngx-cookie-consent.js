@@ -1,7 +1,7 @@
 import { Component, HostBinding, NgModule } from '@angular/core';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatIconModule } from '@angular/material/icon';
+import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 /**
  * @fileoverview added by tsickle
@@ -68,7 +68,7 @@ var NgxCookieConsentModule = /** @class */ (function () {
         { type: NgModule, args: [{
                     declarations: [NgxCookieConsentComponent],
                     imports: [
-                        BrowserAnimationsModule,
+                        CommonModule,
                         MatIconModule,
                         MatButtonModule
                     ],

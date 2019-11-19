@@ -1,12 +1,13 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, Injector } from '@angular/core';
-import { NgxCookieConsentModule, NgxCookieConsentComponent } from '@lacosanostra/ngx-cookie-consent';
+import { Injector, NgModule } from '@angular/core';
+import { NgxCookieConsentComponent, NgxCookieConsentModule } from 'projects/lacosanostra/ngx-cookie-consent/src/public-api';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { createCustomElement } from '@angular/elements';
 
 @NgModule({
   declarations: [],
   imports: [
-    BrowserModule,
+    BrowserAnimationsModule,
     NgxCookieConsentModule
   ],
   providers: [],
