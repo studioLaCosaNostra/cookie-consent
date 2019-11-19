@@ -1,4 +1,6 @@
-import { Component, OnInit, HostBinding } from '@angular/core';
+import { Component, HostBinding, OnInit } from '@angular/core';
+
+import { Platform } from '@angular/cdk/platform';
 
 @Component({
   selector: 'lib-ngx-cookie-consent',
@@ -16,7 +18,12 @@ export class NgxCookieConsentComponent implements OnInit {
   @HostBinding('class.visible') visible = false;
   private signature = 'cookie-consent-closed';
 
+  constructor(private platform: Platform) {}
+
   public ngOnInit(): void {
+    if (!this.platform.isBrowser) {
+      return;
+    }
     const isClosed = localStorage.getItem(this.signature) === 'true';
     if (!isClosed) {
       this.visible = true;
