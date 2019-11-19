@@ -1,4 +1,5 @@
 import { Component, HostBinding, NgModule } from '@angular/core';
+import { Platform } from '@angular/cdk/platform';
 import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -8,7 +9,8 @@ import { MatIconModule } from '@angular/material/icon';
  * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NgxCookieConsentComponent = /** @class */ (function () {
-    function NgxCookieConsentComponent() {
+    function NgxCookieConsentComponent(platform) {
+        this.platform = platform;
         this.visible = false;
         this.signature = 'cookie-consent-closed';
     }
@@ -19,6 +21,9 @@ var NgxCookieConsentComponent = /** @class */ (function () {
      * @return {?}
      */
     function () {
+        if (!this.platform.isBrowser) {
+            return;
+        }
         /** @type {?} */
         var isClosed = localStorage.getItem(this.signature) === 'true';
         if (!isClosed) {
@@ -42,6 +47,10 @@ var NgxCookieConsentComponent = /** @class */ (function () {
                     styles: [":host{display:none;-webkit-box-align:center;align-items:center}:host.visible{display:-webkit-box;display:flex}:host .cookie-consent-content{-webkit-box-flex:1;flex-grow:1}"]
                 }] }
     ];
+    /** @nocollapse */
+    NgxCookieConsentComponent.ctorParameters = function () { return [
+        { type: Platform }
+    ]; };
     NgxCookieConsentComponent.propDecorators = {
         visible: [{ type: HostBinding, args: ['class.visible',] }]
     };
@@ -55,6 +64,11 @@ if (false) {
      * @private
      */
     NgxCookieConsentComponent.prototype.signature;
+    /**
+     * @type {?}
+     * @private
+     */
+    NgxCookieConsentComponent.prototype.platform;
 }
 
 /**
