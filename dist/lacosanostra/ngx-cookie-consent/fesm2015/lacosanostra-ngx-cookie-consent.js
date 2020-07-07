@@ -4,35 +4,21 @@ import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 
-/**
- * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
 class NgxCookieConsentComponent {
-    /**
-     * @param {?} platform
-     */
     constructor(platform) {
         this.platform = platform;
         this.visible = false;
         this.signature = 'cookie-consent-closed';
     }
-    /**
-     * @return {?}
-     */
     ngOnInit() {
         if (!this.platform.isBrowser) {
             return;
         }
-        /** @type {?} */
         const isClosed = localStorage.getItem(this.signature) === 'true';
         if (!isClosed) {
             this.visible = true;
         }
     }
-    /**
-     * @return {?}
-     */
     close() {
         localStorage.setItem(this.signature, 'true');
         this.visible = false;
@@ -49,35 +35,16 @@ NgxCookieConsentComponent.decorators = [
       <mat-icon>close</mat-icon>
     </button>
   `,
-                styles: [":host{display:none;-webkit-box-align:center;align-items:center}:host.visible{display:-webkit-box;display:flex}:host .cookie-consent-content{-webkit-box-flex:1;flex-grow:1}"]
-            }] }
+                styles: [":host{align-items:center;display:none}:host.visible{display:flex}:host .cookie-consent-content{flex-grow:1}"]
+            },] }
 ];
-/** @nocollapse */
 NgxCookieConsentComponent.ctorParameters = () => [
     { type: Platform }
 ];
 NgxCookieConsentComponent.propDecorators = {
     visible: [{ type: HostBinding, args: ['class.visible',] }]
 };
-if (false) {
-    /** @type {?} */
-    NgxCookieConsentComponent.prototype.visible;
-    /**
-     * @type {?}
-     * @private
-     */
-    NgxCookieConsentComponent.prototype.signature;
-    /**
-     * @type {?}
-     * @private
-     */
-    NgxCookieConsentComponent.prototype.platform;
-}
 
-/**
- * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
 class NgxCookieConsentModule {
 }
 NgxCookieConsentModule.decorators = [
@@ -92,14 +59,12 @@ NgxCookieConsentModule.decorators = [
             },] }
 ];
 
-/**
- * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+/*
+ * Public API Surface of ngx-cookie-consent
  */
 
 /**
- * @fileoverview added by tsickle
- * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ * Generated bundle index. Do not edit.
  */
 
 export { NgxCookieConsentComponent, NgxCookieConsentModule };
