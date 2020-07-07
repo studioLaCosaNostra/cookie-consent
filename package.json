@@ -26,7 +26,7 @@
     "@angular/router": "~10.0.2",
     "caniuse-lite": "^1.0.30001008",
     "document-register-element": "^1.14.3",
-    "rxjs": "~6.5.3",
+    "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
   },
